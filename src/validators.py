@@ -8,12 +8,14 @@ def Amount(Transaction):
         raise ValidationError("Amount must be a number.")
     if amount <= 0:
         raise ValidationError("Amount must be greater than 0.")
-
+    else:
+        return True
     
 def Transactioncheck(Transaction):
     if not isinstance(Transaction["type"], (int, float)) or Transaction["type"].upper()not in ("INCOME", "EXPENSE"):
         raise ValidationError("Must be INCOOME or EXPENSE")
-
+    else:
+        return True
 
 def is_iso_date(s: str) -> bool:
     try:
@@ -25,9 +27,13 @@ def is_iso_date(s: str) -> bool:
 def DateaAndTime(Transaction):
     if not isinstance(Transaction["date"], str) or not is_iso_date(Transaction["date"]):
         raise ValidationError("Must be in YYYY-MM-DD Format")
+    else:
+        return True
 
 
 def ValidCategory(Transaction):
     if not isinstance(Transaction["category"], str) or len(Transaction["category"].strip()) == 0:
         raise ValidationError("Provide the Category")
+    else:
+        return True
 
