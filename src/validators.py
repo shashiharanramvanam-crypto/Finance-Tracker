@@ -1,5 +1,4 @@
 from src.exceptions import ValidationError
-from src.models import Transaction
 import datetime
 
 def Amount(Transaction):
