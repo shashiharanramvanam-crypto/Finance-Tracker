@@ -32,7 +32,7 @@ The application implements a decoupled, layered backend architecture where conce
 * **Service Layer (`services.py`):** Contains computational domain logic, aggregations, spending rate calculations, and budget thresholds. Completely decoupled from CLI arguments and terminal formatting.
 * **Presentation Layer (`cli.py` & `main.py`):** CLI parsing using argparse subparsers, formatted ASCII table outputs, and top-level exception trapping.
 
-```text
+```
 [ Terminal Input (CLI / main.py) ]
                │
                ▼
@@ -50,7 +50,7 @@ The application implements a decoupled, layered backend architecture where conce
 ```
 ## Project Structure
 
-Plaintext
+
 ```
 finance_tracker/
 │
@@ -98,9 +98,9 @@ Clone the repository:
 Bash
 ```
 git clone https://github.com/shashiharanramvanam-crypto/Finance-Tracker.git
-cd cli-personal-finance-tracker
-Verify Python version (Python 3.10+ recommended):
+cd Finance-Tracker
 ```
+Verify Python version (Python 3.10+ recommended):
 Bash
 ```
 python --version
