@@ -1,0 +1,26 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing & coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local data files (keep schema/code, do not push your personal finance data)
+data/*.json
+data/*.csv
+!data/.gitkeep
+
+# Environment variables & virtual environments
+.env
+venv/
+.venv/
+env/
+
+# Editor / OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
