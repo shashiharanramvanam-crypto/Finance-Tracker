@@ -1,9 +1,10 @@
 from src.exceptions import ValidationError
 import datetime
+from decimal import Decimal
 
 def Amount(Transaction):
     amount=Transaction.amount
-    if not isinstance(amount, (int, float)) or isinstance(amount, bool):
+    if not isinstance(amount, (int, float, Decimal)) or isinstance(amount, bool):
         raise ValidationError("Amount must be a number.")
     if amount <= 0:
         raise ValidationError("Amount must be greater than 0.")
