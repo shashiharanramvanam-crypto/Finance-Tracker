@@ -5,7 +5,7 @@ from decimal import Decimal
 @dataclass
 class Transaction:
     id:str = field(default_factory=lambda: str(uuid.uuid4()))
-    amount:float | Decimal =0.0
+    amount:float | Decimal = 0.0
     category:str=""
     date:str=""
     type:str=""
@@ -14,7 +14,7 @@ class Transaction:
     def to_dict(self)->dict:
         return {
             "id":self.id,
-            "amount":self.amount,
+            "amount":float(self.amount) if isinstance(self.amount, Decimal) else self.amount,
             "category":self.category,
             "date":self.date,
             "type":self.type,
