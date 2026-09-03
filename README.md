@@ -188,12 +188,12 @@ Bash
 python main.py audit --budget 1200.00 --month 2026-09
 ```
 Sample output:
-
+```
 Plaintext
 Month 2026-09 | Budget: $1200.00 | Spent: $45.50 | Remaining: $1154.50 [NORMAL]
 5. Export & Import CSV
 Facilitates bulk imports from external financial services and exports local records to standard CSV files.
-
+```
 Bash
 ```
 # Export transactions to CSV
