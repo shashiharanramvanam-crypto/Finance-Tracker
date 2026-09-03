@@ -1,0 +1,4 @@
+# Zero external runtime dependencies required (Python 3.10+ standard library)
+# Development & testing tooling (optional):
+pytest>=8.0.0
+flake8>=7.0.0
