@@ -97,7 +97,7 @@ Clone the repository:
 
 Bash
 ```
-git clone [https://github.com/](https://github.com/)<YOUR-USERNAME>/cli-personal-finance-tracker.git
+git clone https://github.com/shashiharanramvanam-crypto/Finance-Tracker.git
 cd cli-personal-finance-tracker
 Verify Python version (Python 3.10+ recommended):
 ```
