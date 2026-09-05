@@ -1,4 +1,3 @@
-# main.py
 from src.storage import Storage
 from src.services import FinanceService
 from src.cli import run_cli
