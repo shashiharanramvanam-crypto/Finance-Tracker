@@ -32,7 +32,7 @@ The application implements a decoupled, layered backend architecture where conce
 * **Service Layer (`services.py`):** Contains computational domain logic, aggregations, spending rate calculations, and budget thresholds. Completely decoupled from CLI arguments and terminal formatting.
 * **Presentation Layer (`cli.py` & `main.py`):** CLI parsing using argparse subparsers, formatted ASCII table outputs, and top-level exception trapping.
 
-```text
+```
 [ Terminal Input (CLI / main.py) ]
                │
                ▼
@@ -50,7 +50,7 @@ The application implements a decoupled, layered backend architecture where conce
 ```
 ## Project Structure
 
-Plaintext
+
 ```
 finance_tracker/
 │
@@ -97,10 +97,10 @@ Clone the repository:
 
 Bash
 ```
-git clone [https://github.com/](https://github.com/)<YOUR-USERNAME>/cli-personal-finance-tracker.git
-cd cli-personal-finance-tracker
-Verify Python version (Python 3.10+ recommended):
+git clone https://github.com/shashiharanramvanam-crypto/Finance-Tracker.git
+cd Finance-Tracker
 ```
+Verify Python version (Python 3.10+ recommended):
 Bash
 ```
 python --version
@@ -151,7 +151,7 @@ python main.py list --start-date 2026-09-01 --end-date 2026-09-30
 ```
 Sample output:
 
-```
+``
 DATE         | TYPE    | CATEGORY       | AMOUNT      | DESCRIPTION
 ----------------------------------------------------------------------
 2026-09-01   | INCOME  | Salary         | $   2500.00 | Monthly Paycheck
@@ -188,12 +188,12 @@ Bash
 python main.py audit --budget 1200.00 --month 2026-09
 ```
 Sample output:
-
+```
 Plaintext
 Month 2026-09 | Budget: $1200.00 | Spent: $45.50 | Remaining: $1154.50 [NORMAL]
 5. Export & Import CSV
 Facilitates bulk imports from external financial services and exports local records to standard CSV files.
-
+```
 Bash
 ```
 # Export transactions to CSV
